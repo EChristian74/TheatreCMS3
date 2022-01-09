@@ -23,8 +23,18 @@ Stepping into a project that was already underway was (in my view) about as "rea
 
 Below are descriptions of the stories I worked on, along with code snippets and navigation links. I also have some full code files in this repo for the larger functionalities I implemented.  Please note, during the time that this project was ongoing, I experienced some personal challenges that impacted my ability to complete as many project stories as I had intended upon inception of the project.  However, I have attempted to provide perspective as it concerns the manner in which I approach and execute relative to the work that I produce. 
 
+## Back End Stories
+* Create Entity Model for Rental Request and CRUD Pages
+
+### Create Entity Model for Rental Request and CRUD Pages
 
 
+## Front End Storie
+* Sign-in Page Styling
+* Rental Request Accordion
+
+### Sign-in Page Styling
+### Rental Request Accordion
 
 
 Finally, utilizing a DevOps project management methodologies, incorporating Scrum task tracking, and Agile Boards was such a different experience from other projects I have participated that were not of a software development nature as it concerns.  I am astounded at the the effectiveness of these methods as it concerns efficiency, task management, accuracy and so on.  They are extremely powerful and I am very excited to venture into an industry that takes such a methodical and contrived approach to the work that I will do in the coming years.   
