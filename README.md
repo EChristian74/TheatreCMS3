@@ -43,6 +43,33 @@ Below are descriptions of the stories I worked on, along with code snippets and 
 #### Rental Request Index Page Accordion: Story consisted of revision of an existing rental request table scaffolded index page to an accordion.  Accordion header bar was to reveal a panel with additional details for rental requests whilst pushing other rental requests further down the page.  Furthermore, rental request details were to meet specific aesthetic requirements and was to include a bar indicating "time remaining" and "time till start."  Finally, a "start time" and "end time" were to be present as well.
 
 
+### Image Gallery:  Below are some images to provide some context for this project:
+
+* Project Main Landing Page:
+
+![Project Main Landing Page](/img/___)
+
+* Application Directory:
+
+![Application Directory](/img/___)
+
+* Image Link to My Page:
+
+![Image Link to My Page](/img/___)
+
+* Home Page for My Application:
+
+![Home Page for My Application](/img/___)
+
+* Open Submit Review Form:
+
+![Open Submit Review Form](/img/___)
+
+* Full Submit Review Form:
+
+![Full Submit Review Form](/img/___)
+
+
 ## Additional Thoughts
 
 Finally, utilizing a DevOps project management methodologies, incorporating Scrum task tracking, and Agile Boards was such a different experience from other projects I have participated that were not of a software development nature as it concerns.  I am astounded at the the effectiveness of these methods as it concerns efficiency, task management, accuracy and so on.  They are extremely powerful and I am very excited to venture into an industry that takes such a methodical and contrived approach to the work that I will do in the coming years.   
