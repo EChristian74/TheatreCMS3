@@ -46,7 +46,8 @@ Below are descriptions of the stories I worked on, along with code snippets and 
 
 Finally, utilizing a DevOps project management methodologies, incorporating Scrum task tracking, and Agile Boards was such a different experience from other projects I have participated that were not of a software development nature as it concerns.  I am astounded at the the effectiveness of these methods as it concerns efficiency, task management, accuracy and so on.  They are extremely powerful and I am very excited to venture into an industry that takes such a methodical and contrived approach to the work that I will do in the coming years.   
 
-## Links: 
+### Links: 
+
 * GitHub: <https://github.com/EChristian74>
 * LinkedIn: <https://www.linkedin.com/in/christianmethodical/>
 * Email: <christianmethodical@gmail.com>
