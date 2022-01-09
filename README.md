@@ -6,13 +6,17 @@ Academy Software Developer Bootcamp](https://www.learncodinganywhere.com/codingb
 ## Dependencies:
 
 * [Windows 10 OS](https://www.microsoft.com/en-us/software-download/)
+* [C#](https://www.microsoft.com/en-us/download/details.aspx?id=7029)
 * [HTML5](https://www.microsoft.com/en-us/p/html5-css-php-javascript/9nblggh08ltm?activetab=pivot:overviewtab)
 * [CSS](https://www.microsoft.com/en-us/software-download/)
 * [JavaScript](https://www.microsoft.com/en-us/software-download/)
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/download/)
+* [jQuery](https://jquery.com/download/)
 * [PIP](https://pip.pypa.io/en/stable/installation/)
+* [Razor Syntax](https://www.nuget.org/packages/Microsoft.AspNet.Razor/)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 * [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet)
+
 
 
 ## Introduction
