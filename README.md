@@ -52,4 +52,4 @@ Finally, utilizing a DevOps project management methodologies, incorporating Scru
 * LinkedIn: <https://www.linkedin.com/in/christianmethodical/>
 * Email: <christianmethodical@gmail.com>
 
-Jump to: [Dependencies](#dependencies), [Introduction](#introduction), [Back End Stories](#back), [Front End Stories](#front), [Additional Thoughts](#additional), [Page Top](#theatrecms3)
+Jump to: [Dependencies](#dependencies), [Introduction](#introduction), [Back End Stories](#back-end-stories), [Front End Stories](#front-end-stories), [Additional Thoughts](#additional-thoughts), [Page Top](#theatrecms3)
