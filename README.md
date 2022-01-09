@@ -26,19 +26,20 @@ Below are descriptions of the stories I worked on, along with code snippets and 
 ### Back End Stories
 * Create Entity Model for Rental Request and CRUD Pages
 
-#### Create Entity Model for Rental Request and CRUD Pages
+#### Create Entity Model for Rental Request and CRUD Pages: Story consisted of creation of an entity model for Rental Request and CRUD pages so that requests can be saved to the database, create Rental Request model schema, update database to create table, verify that table has been created in database, scaffold the CRUD pages within Areas > Rental to create the Index, Create, Details, and Delete pages.  Requirement included not creating a new DbContext (use existing), use of existing Layout.cstml in main project, and ensuring not to select option to async controller methods.
 
 
-### Front End Storie
-* Sign-in Page Styling
-* Rental Request Accordion
+### Front End Stories
+* Sign-In Page Styling
+* Rental Request Index Page Accordion
 
-#### Sign-in Page Styling: Story consisted of styling page the displays names of developers that worked on the project, doing so without changing, adding or removing HTML, leaving <p> tags 'as is' (no class adds or changes), optional addition of classes or ids for surrounding container that contains the devs names, incorporation of compound selectors to select the <p> tags, addition of CSS to create the Site.css file, setting of the width of all <p> tags to a specific width so that they are all uniform, and ensuring that <p> tags do not wrap, but rather implement an ellipses CSS property when text overflows.
+#### Sign-In Page Styling: Story consisted of styling of the developers signin page that worked on the project, howeving doing so without changing, adding or removing HTML, ensuring that <p> tags are not revised or new ones created.  However, classes or ids could be added to the surrounding name container and use of compound selector was allowed.  Finally, add CSS styling was added with <p> tag for a specific width, and CSS properties we added to ensure that any text overflow would be handled utilizing CSS properties and ellipses.
+  
+#### Rental Request Index Page Accordion: Story consisted of 
 
-#### Rental Request Accordion: Revise scaffolded index page to an accordion, ensuring that clicking on the horizonal bar reveals a panl with additional details about the rental request whilst pushing other rental requests further down the page, ensuring that each rental request in the accordion meets specific aethetic requirements, and incorporating a feature that displays "time remaining" and "time till start", and finally displaying the start and end times for the rental.
 
 ## Additional Thoughts
-  
+
 Finally, utilizing a DevOps project management methodologies, incorporating Scrum task tracking, and Agile Boards was such a different experience from other projects I have participated that were not of a software development nature as it concerns.  I am astounded at the the effectiveness of these methods as it concerns efficiency, task management, accuracy and so on.  They are extremely powerful and I am very excited to venture into an industry that takes such a methodical and contrived approach to the work that I will do in the coming years.   
 
 ## Links: 
@@ -46,4 +47,4 @@ Finally, utilizing a DevOps project management methodologies, incorporating Scru
 * LinkedIn: <https://www.linkedin.com/in/christianmethodical/>
 * Email: <christianmethodical@gmail.com>
 
-Jump to: [Dependencies](#dependencies), [Introduction](#introduction), [Features](#features), [Front-End](#front), [Back End](#back), [Page Top](#theatrecms3)
+Jump to: [Dependencies](#dependencies), [Introduction](#introduction), [Back End Stories](#back), [Front End Stories](#front), [Additional Thoughts](#additional), [Page Top](#theatrecms3)
