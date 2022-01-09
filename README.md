@@ -26,16 +26,16 @@ Below are descriptions of the stories I worked on, along with code snippets and 
 ### Back End Stories
 * Create Entity Model for Rental Request and CRUD Pages
 
-#### Create Entity Model for Rental Request and CRUD Pages: Story consisted of creation of an entity model for Rental Request and CRUD pages so that requests can be saved to the database, create Rental Request model schema, update database to create table, verify that table has been created in database, scaffold the CRUD pages within Areas > Rental to create the Index, Create, Details, and Delete pages.  Requirement included not creating a new DbContext (use existing), use of existing Layout.cstml in main project, and ensuring not to select option to async controller methods.
+#### Create Entity Model for Rental Request and CRUD Pages: Story consisted of creation of an entity model for rental request and CRUD pages so that requests can be saved to the database, creation of rental request a model schema, update of database to create a table, verification that table has been created in database, and scaffolding of the CRUD pages within Areas > Rental to create the Index, Create, Details, and Delete pages.  Requirement also included not creating a new DbContext (use existing), use of existing Layout.cstml in main project, and ensuring not to select option to async controller methods.
 
 
 ### Front End Stories
 * Sign-In Page Styling
 * Rental Request Index Page Accordion
 
-#### Sign-In Page Styling: Story consisted of styling of the developers signin page that worked on the project, howeving doing so without changing, adding or removing HTML, ensuring that <p> tags are not revised or new ones created.  However, classes or ids could be added to the surrounding name container and use of compound selector was allowed.  Finally, add CSS styling was added with <p> tag for a specific width, and CSS properties we added to ensure that any text overflow would be handled utilizing CSS properties and ellipses.
+#### Sign-In Page Styling: Story consisted of styling of the developers signin page that worked on the project, howeving doing so without changing, adding or removing HTML, ensuring that paragraph tags are not revised or new ones created.  However, classes or ids could be added to the surrounding name container and use of compound selector was allowed.  Finally, add CSS styling was added for paragraph tags to a specific width for uniformity, and CSS properties we added to ensure that any text overflow would be handled utilizing CSS properties and ellipses.
   
-#### Rental Request Index Page Accordion: Story consisted of 
+#### Rental Request Index Page Accordion: Story consisted of revision of an existing rental request table scaffolded index page to an accordion.  Accordion header bar was to reveal a panel with additional details for rental requests whilst pushing other rental requests further down the page.  Furthermore, rental request details were to meet specific aesthetic requirements and was to include a bar indicating "time remaining" and "time till start."  Finally, a "start time" and "end time" were to be present as well.
 
 
 ## Additional Thoughts
