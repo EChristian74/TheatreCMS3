@@ -45,29 +45,29 @@ Below are descriptions of the stories I worked on, along with code snippets and 
 
 ### Image Gallery:  Below are some images to provide some context for this project:
 
-* Project Main Landing Page:
+* Project Home Page:
 
-![Project Main Landing Page](/img/___)
+![Project Home Page](/img/vertigo_home.jpg)
 
-* Application Directory:
+* Rental Request:
 
-![Application Directory](/img/___)
+![Rental Request](/img/vertigo_rental_request.jpg)
 
-* Image Link to My Page:
+* Rental Request Accordion:
 
-![Image Link to My Page](/img/___)
+![Image Link to My Page](/img/vertigo_rental_request_accordion.jpg)
 
-* Home Page for My Application:
+* Rental Request Create:
 
-![Home Page for My Application](/img/___)
+![Rental Request Create](/img/vertigo_rental_request_create.jpg)
 
-* Open Submit Review Form:
+* Rental Request Edit:
 
-![Open Submit Review Form](/img/___)
+![Rental Request Edit](/img/vertigo_rental_request_edit.jpg)
 
-* Full Submit Review Form:
+* Rental Request Delete:
 
-![Full Submit Review Form](/img/___)
+![Rental Request Delete](/img/vertigo_rental_request_delete.jpg)
 
 
 ## Additional Thoughts
