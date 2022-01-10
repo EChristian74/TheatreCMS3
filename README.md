@@ -49,6 +49,10 @@ Below are descriptions of the stories I worked on, along with code snippets and 
 
 ![Project Home Page](/img/vertigo_home.jpg)
 
+* Signin Page:
+
+![Signin Page](/img/vertigo_rental_request_signin.jpg)
+
 * Rental Request:
 
 ![Rental Request](/img/vertigo_rental_request.jpg)
