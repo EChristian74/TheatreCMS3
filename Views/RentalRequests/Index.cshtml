@@ -1,0 +1,101 @@
+﻿@model IEnumerable<TheatreCMS3.Areas.Rent.Models.RentalRequest>
+@using TheatreCMS3.Helpers;
+@{
+  ViewBag.Title = "Index";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2 class="text-center">Index</h2>
+
+<div class="row" id="rent-request-navigation">
+  <p>
+    @Html.ActionLink("Create New", "Create")
+  </p>
+</div>
+
+
+@{int i = 0;}
+@foreach (var item in Model)
+{
+  <div class="panel-group" id="rent-request-accordion_@i">
+    <div class="panel panel-default" id="rent-request-card-accordion_@i">
+      <div class="accordion-panel">
+
+        <h2 class="panel-heading" type="button" id="rent-request-accordion-header" data-toggle="collapse" data-target="#collapseOne_@i" aria-expanded="false" aria-controls="collapseOne_@i">
+          <strong>@item.Company</strong><br>
+        </h2>
+        <div id="collapseOne_@i" class="collapse" aria-labelledby="rent-request-card-accordion_@i" data-parent="#rent-request-card-accordion_@i">
+          <div class="accordion-body">
+
+            <div class="table" id="rent-request-body">
+
+              @{
+                DateTime requested = (DateTime)item.RequestedTime;
+                DateTime start1 = (DateTime)item.StartTime;
+                TimeSpan remaining = requested.Subtract(start1);
+              }
+
+              @{
+                DateTime now = (DateTime.Now);
+                DateTime start2 = (DateTime)item.StartTime;
+                TimeSpan until = now.Subtract(start2);
+              }
+
+              <div class="row" id="rent-request-row-1">
+                <div class="col-4" id="col-1">
+                  <p><strong>@item.Company</strong></p>
+                  <p><strong>@item.ContactPerson</strong></p>
+                </div>
+                <div class="col-6" id="col-2">
+                  <p>Time Remaining: @remaining.ToString(@"dd\:hh\:mm")</p>
+                  <p>Time Till Start: @until.ToString(@"dd\:hh\:mm")</p>
+                </div>
+              </div>
+
+              <div class="row" id="rent-request-row-2">
+                <div class="col-6" id="col-1">
+                  <p>Start Time</p>
+                  <p>@item.StartTime.ToString("hh:mm tt")</p>
+                  <p>@item.StartTime.ToString("MMMM, dd yyyy")</p>
+                </div>
+                <div class="col-6" id="col-2">
+                  <p>End Time</p>
+                  <p>@item.EndTime.ToString("hh:mm tt")</p>
+                  <p>@item.EndTime.ToString("MMMM, dd yyyy")</p>
+                </div>
+              </div>
+
+              <div class="row" id="rent-request-row-3">
+                <div class="col-8" id="col-1">
+                  <p>RentalCode: @item.RentalCode</p>
+                  <p>ProjectInfo: @item.ProjectInfo</p>
+                  <p>Rentals: </p>
+                  <p>Accepted: @item.Accepted </p>
+                  <p>ContractSigned: @item.ContractSigned </p>
+                  <p>Survey: </p>
+                </div>
+
+                <div class="col-4" id="col-2">
+                  <p>@Html.ActionLink("Edit", "Edit", new { id = item.RentalRequestID })</p>
+                  <p>@Html.ActionLink("Details", "Details", new { id = item.RentalRequestID })</p>
+                  <p>@Html.ActionLink("Delete", "Delete", new { id = item.RentalRequestID })</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  i++;
+}
+
+
+
+
+
+
+
+

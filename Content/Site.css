@@ -1,0 +1,738 @@
+﻿/* CSS color variables */
+:root {
+  /* Color palette for css */
+  --main-color: #db1a11; /* Red */
+  --main-color--light: #f04d44; /* Red, a shade lighter */
+  --secondary-color: #d6972a; /* Yellow gold */
+  --secondary-color--dark: #9d7c39; /* Dark Gold */
+  --light-color: #fffbfb; /* White */
+  --dark-color: #000000; /* Black */
+}
+
+/*Use these classes to easily assign one of the variable colors to an element*/
+/*Text color classes*/
+.cms-text-main {
+  color: var(--main-color);
+}
+
+.cms-text-main-light {
+  color: var(--main-color--light);
+}
+
+.cms-text-secondary {
+  color: var(--secondary-color);
+}
+
+.cms-text-secondary-dark {
+  color: var(--secondary-color--dark);
+}
+
+.cms-text-light {
+  color: var(--light-color);
+}
+
+.cms-text-dark {
+  color: var(--dark-color);
+}
+/*End color classes*/
+
+/*Background color classes*/
+.cms-bg-main {
+  background-color: var(--main-color);
+}
+
+.cms-bg-main-light {
+  background-color: var(--main-color--light);
+}
+
+.cms-bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.cms-bg-secondary-dark {
+  background-color: var(--secondary-color--dark);
+}
+
+.cms-bg-light {
+  background-color: var(--light-color);
+}
+
+.cms-bg-dark {
+  background-color: var(--dark-color);
+}
+/*End background color classes*/
+
+body {
+  background-color: var(--dark-color);
+  color: var(
+    --light-color
+  ); /*This should default all text to the white of the site.*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+  white-space: normal;
+}
+
+/* Styling and positioning for the Navbar */
+
+.nav > li {
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.nav > li:hover {
+  background-color: var(--light-color);
+  border-radius: 0.25rem;
+  color: var(--secondary-color);
+}
+
+.nav > li > a {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+.navbar-icon-red {
+  height: 42px;
+  width: auto;
+}
+
+.navbar {
+  background-color: var(--main-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  /* make text inside black */
+  color: black !important;
+}
+
+.navbar-light navbar-toggler {
+  /* removing hamburger's border the hard way */
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar--hamburger {
+  /* hiding in desktop mode */
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  /* fixing navbar elements only within the mobile view */
+  .nav-item {
+    /* hiding regular nav in mobile */
+    display: none;
+  }
+
+  .navbar--hamburger {
+    display: block;
+    position: relative;
+  }
+
+  .navbar--hamburger .nav-item {
+    display: block;
+  }
+
+  .navbar-toggler {
+    display: block;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: -19px;
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    top: 30px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: var(--secondary-color);
+    border-radius: 0.25rem;
+  }
+
+  .navbar-nav .nav-item .navbar-hamburger--navitem {
+    text-align: left;
+  }
+
+  .navbar-nav .nav-link .navbar-hamburger--navlink {
+    margin-bottom: 1px;
+    padding: 5px;
+  }
+
+  .dropdown-menu .navbar-hamburger--dropdownmenu {
+    border: none;
+  }
+
+  .dropdown-item .navbar-hamburger--drowndownitem {
+    border-radius: 0.25rem;
+  }
+}
+
+#navdropRight {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #navdropRight {
+    display: block;
+    position: relative;
+  }
+
+  .drpbtnRight .nav-link {
+    display: none;
+  }
+
+  #dropIcon {
+    font-size: 2em;
+    color: var(--secondary-color);
+  }
+
+  #navdropRight .dropdown-menu {
+    position: absolute;
+    background-color: var(--secondary-color);
+    color: black;
+    font-weight: 900;
+    right: 0;
+  }
+
+  #navdropRight .dropdown-item {
+    font-weight: bold;
+  }
+}
+
+h1.CMS-text-bigger {
+  text-align: center;
+  font-size: 75px;
+}
+
+a.CMS-text-bigger {
+  font-size: 36px;
+}
+
+/* Additional Styling for the Navbar dropdown menu to override the default bootstrap color schema */
+.nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--dark-color);
+  background-color: #deb887;
+}
+
+/* Navbar dropdown menu background color*/
+.dropdownbckgrndclr {
+  background-color: var(--secondary-color);
+}
+/*Navbar dropdown menu text color*/
+.dropdowntxt {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+/*----- End Styling for Navbar -------*/
+
+/*-----Styling for _Footer.cshtml-----*/
+
+footer {
+  margin-top: auto;
+}
+
+/*content on left side*/
+.footer-content {
+  padding-top: 120px;
+  padding-left: 30px;
+}
+
+/*content on right side*/
+.footer-rcontent {
+  display: none;
+}
+
+.footer-links {
+  height: 24px;
+  /*height has to be entered manually due to floating elements*/
+  /*ensures padding/margin relative to other elements responds as expected    */
+}
+
+.footer-address {
+  padding-top: 8px;
+  line-height: 20px;
+}
+
+/*copyright when it appears on left for small devices*/
+.footer-copyright {
+  width: 115px;
+  text-align: right;
+  position: relative;
+}
+
+/*copyright when it apears on right for large devices*/
+.footer-lcopyright {
+  width: 115px;
+  position: relative;
+}
+
+/*icons and copyright on left disappear on large devices*/
+@media only screen and (min-width: 500px) {
+  .footer-icons {
+    display: none;
+  }
+
+  .footer-lcopyright {
+    display: none;
+  }
+
+  .footer-content {
+    padding-left: 100px;
+  }
+
+  .footer-rcontent {
+    display: unset;
+    padding-top: 140px;
+    padding-right: 100px;
+  }
+}
+/*-----End of Styling for _Footer.cshtml-----*/
+
+/* LOGIN PAGE */
+.formContainer {
+  margin: 10% auto;
+  width: 750px;
+  background-color: var(--secondary-color--dark);
+  border: ridge 10px;
+  border-color: var(--main-color--light);
+  box-shadow: inset var(--dark-color) 1px 2px 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .formContainer {
+    width: 100%;
+  }
+}
+
+#loginForm {
+  margin: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
+  color: var(--light-color);
+}
+
+.LoginButton > .btn-warning {
+  background-color: var(--secondary-color);
+  border: outset 2px;
+  border-color: var(--main-color--light);
+  font-weight: bold;
+  box-shadow: var(--dark-color) 0.8px 0.8px 5px;
+}
+
+.LoginButton > .btn-warning:hover {
+  background-color: #b57b16;
+  border: inset 2px;
+  border-color: var(--main-color);
+  box-shadow: inset var(--dark-color) 1px 1px 5px;
+}
+
+/* REGISTER PAGE */
+
+/* Style form with smaller size, centered element, discerning background, shape, and shadow */
+.Register-form {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px var(--secondary-color),
+    -1px -1px 0px var(--light-color);
+}
+
+/* Center align headings and format color and spacing */
+.Register-heading2 {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 50px;
+}
+
+/* Center align headings and format color and spacing */
+.Register-heading4 {
+  color: var(--secondary-color);
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* Allow elements to fill entire form and be centered */
+.Register-div {
+  padding: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Change background color of input fields */
+.Register-input {
+  background-color: white;
+  border: 2px solid black;
+}
+
+/* Hover effects for input fields */
+.Register-input:hover {
+  box-shadow: 0px 0px 10px var(--secondary-color--dark);
+}
+
+/* Style submit button */
+.Register-button {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Button hover effect */
+.Register-button:hover {
+  box-shadow: 0px 0px 5px var(--light-color);
+}
+
+#dropdownMenu2 {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+/* Inputs: focus versus non-focus effects */
+
+.Register-input input[type="text"],
+.Register-input input[type="date"],
+.Register-input input[type="time"],
+.Register-input input[type="number"] {
+  border: 2px solid var(--dark-color);
+  background-color: lightgray !important; /* Overriding bootstrap styles for these form items */
+}
+
+.Register-input input[type="text"]:focus,
+.Register-input input[type="date"]:focus,
+.Register-input input[type="time"]:focus,
+.Register-input input[type="number"]:focus {
+  border: 2px solid var(--secondary-color);
+  background: var(--light-color) !important;
+}
+
+
+/*Home-Contact Page Styling*/
+
+.home-contact--titleFont {
+    font-family: Broadway;
+    font-size: 44px;
+}
+
+.home-contact--heading {
+    padding-top: 20px;
+    position: relative;
+    align-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-contact--heading::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 5px;
+    top: 93%;
+    background: #bd1a11;
+    position: absolute;
+}
+
+
+
+/* Styling for SignIn Page */
+.home-signin-container {
+    display: inline-flex;
+    flex-grow: inherit;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-right: 8px;
+
+}
+
+.home-signin-names {
+    column-count: 4;
+}
+
+    .home-signin-names p {
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        border-radius: 45px;
+        background-color: #db1a11;
+        margin: 5px;
+        height: 55px;
+        width: 265px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 14px;
+        flex-basis: auto;
+    }
+/* End Styling for SignIn */
+
+/*styling for img under navbar*/
+/*theatre logo*/
+ .home-index-homepage-img{
+     display: flex; 
+     margin-top: 7.5%;
+     justify-content: center;
+     
+ }
+
+ /*spotlight*/
+.home-index-homepage-col-left {
+    margin-top: 10%;
+    font-size: 1.9vw;
+    font-family: 'oswald-variablefont_wght';
+    flex-direction: column;
+    justify-content: center;
+    width: 66%;
+    margin-right: 5%;
+}
+.home-index-spotlight-text{
+  margin: 5% 0; 
+}
+.home-index-spotlight-text::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2.5px;
+    background-color: red;
+    margin-top: 0.7%;
+    position: absolute;
+}
+/*tempest and dollshouse under spotlight*/
+.home-index-homepage-col-left-imgs {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 11.75% 0 ;
+    padding: 3%;
+}
+
+/*position for tempest and dollhouse pictures*/
+.home-index-spotpics{
+    flex-direction: column;
+    width: 45vw;
+   
+}
+
+/*donations*/
+.home-index-homepage-col-right {
+    margin-top: 13%;
+    font-size: 1.9vw;
+    font-family: 'oswald-variablefont_wght';
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 33%;
+}
+
+.home-index-donateline::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2.5px;
+    background-color: red;
+    margin-top: 0.10%;
+    position: absolute;
+}
+
+.home-index-homepage-sponsors-text {
+    margin-top: 25%;
+}
+
+.home-index-homepage-sponsors-text:before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2.5px;
+    background-color: red;
+    position: absolute;
+    margin-top: 3.5%;
+}
+    
+/*styling images*/
+.home-index-homepage-col-right-img{
+display: flex; 
+flex-direction:row; 
+align-items: center;
+}
+
+
+/*land acknowledgment styling*/
+/*left column under spotlight */
+.home-index-homepage-land {
+    float: left;
+    display: flex;
+    justify-content: left;
+    font-size: 1.9vw;
+    font-family: 'oswald-variablefont_wght';
+  
+}
+
+.home-index-homepage-land::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2.5px;
+    background-color: red;
+    position: absolute;
+    margin-top: 3.5%;
+}
+
+/*land acknowledgment paragraph*/
+.home-index-homepage-land-text{
+    float: left; 
+    display: flex; 
+    justify-content: left; 
+    font-size: 1vw; 
+    font-family: 'Oswald' sans-serif; 
+    font-stretch: expanded;
+}
+
+    
+/*land acknowledgement helps with paragraph*/
+.home-index-landwrap{
+    display: flex; 
+    flex-direction: column; 
+    
+}
+
+.home-index-container{
+    display: flex; 
+}
+
+.home-index-container2{
+    display: flex; 
+    justify-content: center; 
+    flex-direction:row; 
+    width: 100%;
+   
+}
+/*positioning for right column*/
+
+
+/*positioning for the 3 right column pics sponsors */
+.home-index-fleximgs-right {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+/*pic adjustment for the 3 right picture sponsors*/
+.home-index-upperpics{
+    width: 7.3vw;
+}
+
+/*positioning for right column under first 3 pictures*/
+.home-index-fleximgs-right2 {
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/*sizing for RACC and other pic */
+.home-index-midpic{
+    width: 9vw; 
+}
+
+/*donations position*/
+.home-index-donations{
+   justify-content: right;
+   display: flex;
+   flex-direction: column; 
+   margin-bottom: 20%;
+
+   
+}
+
+/*sponsors position*/
+.home-index-sponsors{
+  right: 33.3%;
+}
+
+.home-index-naya{
+    display: flex; 
+    flex-direction: column;
+    gap: 6px;
+
+}
+.home-index-nayapic{
+    width: 15vw;
+    align-self: center;
+
+}
+
+.home-index-nayarow{
+   display: flex; 
+   flex-direction:row;
+   gap: 135px; 
+}
+
+
+.home-index-button {
+    margin-top: 15%;
+}
+/*donations button*/
+.home-index-donation-button {
+    
+    background-color: darkred;
+    text-decoration: none; 
+    padding: 24px 12px;
+    
+    
+}
+
+@font-face {
+    font-family: 'oswald-variablefont_wght';
+    src: url('../webfonts/oswald-variablefont_wght.ttf') format('truetype');
+}
+
+    .home-signin-names p {
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        border-radius: 45px;
+        background-color: #db1a11;
+        margin: 5px;
+        height: 55px;
+        width: 265px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 14px;
+        flex-basis: auto;
+    }
+/* End Styling for SignIn */
+
+
