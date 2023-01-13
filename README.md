@@ -21,7 +21,7 @@ Academy Software Developer Bootcamp](https://www.learncodinganywhere.com/codingb
 
 ## Introduction
 
-A local theater company in Portland, Oregon needed a new website, howevr, they did not have any technical staff for building of their new website.  Prior to the project, they had been using Word Press sites.  The goal of the project was to build something new that looks professional and unique and is easy to maintain or change.  My role for this project was to share in development of the Rental area of the new website.  The end product for the website would be a MVC/MVVM Web Application in C#.
+A local theater company in Portland, Oregon needed a new website, howevEr, they did not have any technical staff for building of their new website.  Prior to the project, they had been using Word Press sites.  The goal of the project was to build something new that looks professional and unique and is easy to maintain or change.  My role for this project was to share in development of the Rental area of the new website.  The end product for the website would be a MVC/MVVM Web Application in C#.
 
 Stepping into a project that was already underway was (in my view) about as "real-world" of an experience as I can imagine to prepare me for my future roles in software developement.  
 
